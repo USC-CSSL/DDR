@@ -1,0 +1,611 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<< /F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 6 0 R >>
+endobj
+2 0 obj
+<< /BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font >>
+endobj
+3 0 obj
+<< /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font >>
+endobj
+4 0 obj
+<< /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font >>
+endobj
+5 0 obj
+<< /A << /S /URI /Type /Action /URI (https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?usp=sharing) >> /Border [ 0 0 0 ] /Rect [ 264.4529 207.0236 284.4629 219.0236 ] /Subtype /Link /Type /Annot >>
+endobj
+6 0 obj
+<< /BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font >>
+endobj
+7 0 obj
+<< /Annots [ 5 0 R ] /Contents 17 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 16 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 
+  /Trans <<  >> /Type /Page >>
+endobj
+8 0 obj
+<< /Contents 18 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 16 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+  /Type /Page >>
+endobj
+9 0 obj
+<< /Outlines 11 0 R /PageLabels 19 0 R /PageMode /UseNone /Pages 16 0 R /Type /Catalog >>
+endobj
+10 0 obj
+<< /Author () /CreationDate (D:20160210150650+08'00') /Creator (\(unspecified\)) /Keywords () /Producer (ReportLab PDF Library - www.reportlab.com) /Subject (\(unspecified\)) 
+  /Title () >>
+endobj
+11 0 obj
+<< /Count 4 /First 12 0 R /Last 15 0 R /Type /Outlines >>
+endobj
+12 0 obj
+<< /Dest [ 7 0 R /XYZ 62.69291 765.0236 0 ] /Next 13 0 R /Parent 11 0 R /Title (INTRODUCTION) >>
+endobj
+13 0 obj
+<< /Dest [ 7 0 R /XYZ 62.69291 576.0236 0 ] /Next 14 0 R /Parent 11 0 R /Prev 12 0 R /Title (FEATURES) >>
+endobj
+14 0 obj
+<< /Dest [ 7 0 R /XYZ 62.69291 471.0236 0 ] /Next 15 0 R /Parent 11 0 R /Prev 13 0 R /Title (INSTALL) >>
+endobj
+15 0 obj
+<< /Dest [ 7 0 R /XYZ 62.69291 258.0236 0 ] /Parent 11 0 R /Prev 14 0 R /Title (Quick-Start) >>
+endobj
+16 0 obj
+<< /Count 2 /Kids [ 7 0 R 8 0 R ] /Type /Pages >>
+endobj
+17 0 obj
+<< /Length 7264 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 744.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (INTRODUCTION) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 642.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 86 Tm /F1 10 Tf 12 TL 3.107251 Tw (The Aggregate Distributed Dictionary Representation \(ADDR\) method allows users to measure the) Tj T* 0 Tw .487674 Tw (presence of specific semantic and conceptual domains in natural language. This method uses distributed) Tj T* 0 Tw .779069 Tw (representations of words to generate high-dimensional latent representations of specific domains. These) Tj T* 0 Tw 2.613314 Tw (representations can then be compared to representations of documents by calculating the similarity) Tj T* 0 Tw 3.015984 Tw (between them, yielding what is functionally a loading of documents on the domains of interest \(a) Tj T* 0 Tw 1.258443 Tw (document-domain loading\). These loadings or similarities can then be used as variables in subsequent) Tj T* 0 Tw .809147 Tw (models. Accordingly, the ADDR method combines the flexibility and power of distributed representations) Tj T* 0 Tw (with the precision of theoretically constrained construct measurement.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 588.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 38 Tm /F1 10 Tf 12 TL 2.47936 Tw (The addr package provides an easy to implement set of functions that can be used for calculating) Tj T* 0 Tw .703059 Tw (document-domain loadings. The package is designed to be usable for people with minimal programming) Tj T* 0 Tw .673735 Tw (experience and, to this end, it contains functions that convert texts and term-dictionaries from a range of) Tj T* 0 Tw (formats \(LIWC, CSV, and text files\) into the requisite format.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 555.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (FEATURES) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 543.0236 cm
+Q
+q
+1 0 0 1 62.69291 543.0236 cm
+Q
+q
+1 0 0 1 62.69291 531.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Load documents and term-dictionaries from a range of formats) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 525.0236 cm
+Q
+q
+1 0 0 1 62.69291 501.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .153615 Tw (Save aggregate distributed representations of documents and term-dictionaries to CSV formatted file) Tj T* 0 Tw (for later use) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 495.0236 cm
+Q
+q
+1 0 0 1 62.69291 483.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Calculate document-domain loadings) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 483.0236 cm
+Q
+q
+1 0 0 1 62.69291 450.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (INSTALL) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 420.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .29186 Tw (The addr package is currently under development and is not yet publicly deployed. However, addr can be) Tj T* 0 Tw (easily installed using the following steps:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 414.0236 cm
+Q
+q
+1 0 0 1 62.69291 414.0236 cm
+Q
+q
+1 0 0 1 62.69291 402.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (1.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Ensure that Python 2.7 and pip is installed on your current system) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 396.0236 cm
+Q
+q
+1 0 0 1 62.69291 384.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (2.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Download and decompress addr.zip) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 378.0236 cm
+Q
+q
+1 0 0 1 62.69291 366.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (3.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Open a terminal window and navigate into the unzipped addr directory) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 360.0236 cm
+Q
+q
+1 0 0 1 62.69291 336.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (4.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.727318 Tw (Use pip to install the packages required by addr, which are listed in 'requirements.txt\222, using the) Tj T* 0 Tw (following command:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 336.0236 cm
+Q
+q
+1 0 0 1 62.69291 318.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL (pip install -r requirements.txt) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 312.0236 cm
+Q
+q
+1 0 0 1 62.69291 312.0236 cm
+Q
+q
+1 0 0 1 62.69291 288.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (5.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.670651 Tw (In the same terminal session \(still in the unzipped addr directory\) install addr using the following) Tj T* 0 Tw (command:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 288.0236 cm
+Q
+q
+1 0 0 1 62.69291 270.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL (python setup.py install) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 237.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Quick-Start) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 207.0236 cm
+q
+BT 1 0 0 1 0 14 Tm 1.324983 Tw 12 TL /F1 10 Tf 0 0 0 rg (To get started, after downloading the addr package, you can download a pre-trained Word2Vec model) Tj T* 0 Tw (that was trained on the Google News Corpus ) Tj 0 0 .501961 rg (here) Tj 0 0 0 rg (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 173.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 24 re B*
+Q
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( import addr) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 153.8236 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Define file paths. These will be used later in function calls.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 84.62362 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 60 re B*
+Q
+q
+BT 1 0 0 1 0 38 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( documents_path = "/../../documents.csv") Tj T* (>) Tj (>) Tj (>) Tj ( dictionary_directory = "/../../MFD-Seed-text-format") Tj T* (>) Tj (>) Tj (>) Tj ( model_path = "/../../GoogleNews-vectors-negative300.bin") Tj T* (>) Tj (>) Tj (>) Tj ( dictionary_vector_path = "/../../agg_dic_vectors.tsv") Tj T* ET
+Q
+Q
+Q
+Q
+Q
+ 
+endstream
+endobj
+18 0 obj
+<< /Length 3847 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 727.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 528 36 re B*
+Q
+q
+BT 1 0 0 1 0 14 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( document_vector_path = "/Users/joe/offline_research/addr-testing/agg_doc_vecs.tsv") Tj T* (>) Tj (>) Tj (>) Tj ( document_loadings_out_path = "/../../document_dictionary_loadings.tsv") Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 707.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Load Word2Vec Model and specify model dimensionality and word index.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 674.6236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 24 re B*
+Q
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( model, num_features, model_word_set = addr.load_model\(model_path\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 654.6236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Build Python dict of dictionary terms) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 621.4236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 24 re B*
+Q
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( dic_terms=  addr.terms_from_txt\(input_path=dictionary_directory\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 601.4236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Make aggregate vector representations of dictionary dimensions) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 568.2236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 756 24 re B*
+Q
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( agg_dic_vecs = addr.dic_vecs\(dic_terms=dic_terms, model=model, num_features=num_features, model_word_set=model_word_set\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 548.2236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Write aggregate dictionary vectors to file) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 515.0236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 504 24 re B*
+Q
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( addr.write_dic_vecs\(dic_vecs=agg_dic_vecs, output_path=dictionary_vector_path\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 495.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Make aggregate vector representations of documents and write these to file) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 437.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 570 48 re B*
+Q
+q
+BT 1 0 0 1 0 26 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( addr.doc_vecs_from_csv\(input_path=documents_path, output_path=document_vector_path,) Tj T* (                       model=model, num_features=num_features, model_word_set=model_word_set,) Tj T* (                       text_col="text"\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 417.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Calculate similarities between document and dictionary vectors) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 348.6236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 60 re B*
+Q
+q
+BT 1 0 0 1 0 38 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( addr.get_loadings\(agg_doc_vecs_path=document_vector_path,) Tj T* (                  agg_dic_vecs_path=dictionary_vector_path,) Tj T* (                  out_path="document_loadings_out_path",) Tj T* (                  num_features=num_features\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+ 
+endstream
+endobj
+19 0 obj
+<< /Nums [ 0 20 0 R 1 21 0 R ] >>
+endobj
+20 0 obj
+<< /S /D /St 1 >>
+endobj
+21 0 obj
+<< /S /D /St 2 >>
+endobj
+xref
+0 22
+0000000000 65535 f
+0000000075 00000 n
+0000000139 00000 n
+0000000249 00000 n
+0000000364 00000 n
+0000000482 00000 n
+0000000714 00000 n
+0000000822 00000 n
+0000001049 00000 n
+0000001258 00000 n
+0000001366 00000 n
+0000001577 00000 n
+0000001654 00000 n
+0000001770 00000 n
+0000001895 00000 n
+0000002019 00000 n
+0000002134 00000 n
+0000002203 00000 n
+0000009524 00000 n
+0000013428 00000 n
+0000013481 00000 n
+0000013518 00000 n
+trailer
+<< /ID 
+ % ReportLab generated PDF document -- digest (http://www.reportlab.com)
+ [(>\010\237\3227\012gx\3751\304h<\025\(\262) (>\010\237\3227\012gx\3751\304h<\025\(\262)]
+ /Info 10 0 R /Root 9 0 R /Size 22 >>
+startxref
+13555
+%%EOF

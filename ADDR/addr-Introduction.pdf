@@ -1,0 +1,296 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<< /F1 2 0 R /F2 3 0 R /F3 4 0 R >>
+endobj
+2 0 obj
+<< /BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font >>
+endobj
+3 0 obj
+<< /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font >>
+endobj
+4 0 obj
+<< /BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font >>
+endobj
+5 0 obj
+<< /Contents 9 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 8 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+  /Type /Page >>
+endobj
+6 0 obj
+<< /Outlines 10 0 R /PageLabels 11 0 R /PageMode /UseNone /Pages 8 0 R /Type /Catalog >>
+endobj
+7 0 obj
+<< /Author () /CreationDate (D:20160209173340+08'00') /Creator (\(unspecified\)) /Keywords () /Producer (ReportLab PDF Library - www.reportlab.com) /Subject (\(unspecified\)) 
+  /Title (addr Introduction) >>
+endobj
+8 0 obj
+<< /Count 1 /Kids [ 5 0 R ] /Type /Pages >>
+endobj
+9 0 obj
+<< /Length 5309 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 152.1649 0 Td (addr Introduction) Tj T* -152.1649 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 695.0236 cm
+q
+BT 1 0 0 1 0 26 Tm .106136 Tw 12 TL /F1 10 Tf 0 0 0 rg (addr contains interfaces and functionality to compute pair-wise document-dictionary similarities for a set of) Tj T* 0 Tw 2.636412 Tw (term-based dictionaries. The functions in addr can also be used to convert pre-processed text and) Tj T* 0 Tw (term-dictionary files from a range of formats into aggregate vector representations.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 677.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Example) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 643.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 24 re B*
+Q
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( import addr) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 623.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Define file paths. These will be used later in function calls.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 530.6236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 516 84 re B*
+Q
+q
+BT 1 0 0 1 0 62 Tm 12 TL /F3 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( documents_path=\221/../../documents.csv') Tj T* (>) Tj (>) Tj (>) Tj ( dictionary_directory=\221/../../MFD-Seed-text-format') Tj T* (>) Tj (>) Tj (>) Tj ( model_path=\221/../../GoogleNews-vectors-negative300.bin') Tj T* (>) Tj (>) Tj (>) Tj ( dictionary_vector_path=\221/../../agg_dic_vectors.tsv\222) Tj T* (>) Tj (>) Tj (>) Tj ( document_vector_path='/Users/joe/offline_research/addr-testing/agg_doc_vecs.tsv') Tj T* (>) Tj (>) Tj (>) Tj ( document_loadings_out_path=\221/../../document_dictionary_loadings.tsv\222) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 510.6236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Load Word2Vec Model and specify model dimensionality and word index.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 477.4236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 24 re B*
+Q
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( model, num_features, model_word_set=addr.load_model\(model_path\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 457.4236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Build Python dict of dictionary terms) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 424.2236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 24 re B*
+Q
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( dic_terms=addr.terms_from_txt\(input_path=dictionary_directory\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 404.2236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Make aggregate vector representations of dictionary dimensions) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 371.0236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 744 24 re B*
+Q
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( agg_dic_vecs=addr.dic_vecs\(dic_terms=dic_terms, model=model, num_features=num_features, model_word_set=model_word_set\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 351.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Write aggregate dictionary vectors to file) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 317.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 504 24 re B*
+Q
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( addr.write_dic_vecs\(dic_vecs=agg_dic_vecs, output_path=dictionary_vector_path\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 297.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Make aggregate vector representations of documents and write these to file) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 240.6236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 570 48 re B*
+Q
+q
+BT 1 0 0 1 0 26 Tm 12 TL /F3 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( addr.doc_vecs_from_csv\(input_path=documents_path, output_path=document_vector_path,) Tj T* (                       model=model, num_features=num_features, model_word_set=model_word_set,) Tj T* (                       text_col='text'\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 220.6236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Calculate similarities between document and dictionary vectors) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 151.4236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 60 re B*
+Q
+q
+BT 1 0 0 1 0 38 Tm 12 TL /F3 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( addr.get_loadings\(agg_doc_vecs_path=document_vector_path,) Tj T* (                  agg_dic_vecs_path=dictionary_vector_path,) Tj T* (                  out_path=\221document_loadings_out_path',) Tj T* (                  num_features=num_features\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+ 
+endstream
+endobj
+10 0 obj
+<< /Count 0 /Type /Outlines >>
+endobj
+11 0 obj
+<< /Nums [ 0 12 0 R ] >>
+endobj
+12 0 obj
+<< /S /D /St 1 >>
+endobj
+xref
+0 13
+0000000000 65535 f
+0000000075 00000 n
+0000000129 00000 n
+0000000239 00000 n
+0000000354 00000 n
+0000000462 00000 n
+0000000669 00000 n
+0000000776 00000 n
+0000001003 00000 n
+0000001065 00000 n
+0000006430 00000 n
+0000006480 00000 n
+0000006524 00000 n
+trailer
+<< /ID 
+ % ReportLab generated PDF document -- digest (http://www.reportlab.com)
+ [(\030GFJQL5q\271\265\325\005\276\213\371") (\030GFJQL5q\271\265\325\005\276\213\371")]
+ /Info 7 0 R /Root 6 0 R /Size 13 >>
+startxref
+6561
+%%EOF
