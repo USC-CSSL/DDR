@@ -1,9 +1,8 @@
 __author__ = 'joe'
 
-from gensim.models import Word2Vec
+from gensim.models import KeyedVectors as kv
 import logging
 import time as tm
-
 
 def load_model(model_path, verbose = True):
     """
@@ -20,7 +19,7 @@ def load_model(model_path, verbose = True):
         time = '{0:}:{1:}:{2:}'.format(datetime.tm_hour, datetime.tm_min, datetime.tm_sec)
         logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
-    model = Word2Vec.load_word2vec_format(model_path, binary=True)
+    model = kv.load_word2vec_format(model_path, binary=True)
     num_features = model.layer1_size
     model_word_set = set(model.index2word)
     print 'Finished loading model'
