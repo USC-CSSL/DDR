@@ -20,7 +20,7 @@ def load_model(model_path, verbose = True):
         logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
     model = kv.load_word2vec_format(model_path, binary=True)
-    num_features = model.layer1_size
+    num_features = model.vector_size
     model_word_set = set(model.index2word)
     print 'Finished loading model'
     return model, num_features, model_word_set
