@@ -15,7 +15,7 @@ dependencies:
 * numpy
 * pandas
 * cython
-* gensim
+* gensim==2.1.0
 
 
 Guidelines for installing python and these dependencies can be found here: https://packaging.python.org/installing/
