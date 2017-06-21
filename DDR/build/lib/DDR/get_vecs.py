@@ -61,9 +61,9 @@ def write_dic_vecs(dic_vecs, output_path, delimiter='\t'):
     dic_vecs.to_csv(output_path, sep=delimiter, index=False)
 
 
-def doc_vecs_from_csv(input_path, output_path, model, num_features, model_word_set, text_col, delimiter, filter_out = [],
-                  quotechar = None,
-                  id_col=False, header=True ):
+def doc_vecs_from_csv(input_path, output_path, model, num_features, model_word_set, text_col, delimiter, filter_out=[],
+                  quotechar=None,
+                  id_col=False, header=True):
     """
     Create a distributed representation of each document in a column of documents
     contained in the input file. These representations are written to the file
@@ -276,15 +276,4 @@ def doc_vecs_from_txt(input_path, output_path, num_features, model, model_word_s
                 print "\nFinished calculating aggregate document representations", "\nNumber of NA:", na_na
 
 
-
-def write_dic_vecs(dic_vecs, output_path, delimiter='\t'):
-    '''
-
-    :param dic_vecs: Dictionary of distributed dictionary representations
-    :param output_path: Path to output file
-    :param delimiter: Delimiter to use in output file
-    :return:
-    '''
-    dic_vecs = pd.DataFrame.from_dict(dic_vecs, orient='columns')
-    dic_vecs.to_csv(output_path, sep=delimiter, index=False)
 

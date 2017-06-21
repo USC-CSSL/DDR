@@ -48,9 +48,6 @@ def get_loadings(agg_doc_vecs_path, agg_dic_vecs_path, out_path, num_features, d
 
         for doc_vec in doc_vecs_reader:
 
-            doc_vec = doc_vec[0].split(',')
-
-
             if 'nan' in doc_vec:
                 nan_counter['count'] += 1
                 nan_counter['ID'].append(doc_vec[0])
