@@ -3,7 +3,7 @@ DDR README
 
 This package implements the distributed dictionary representation (DDR) algorithm,
 which allows users to estimate the loading of the documents in a corpus on a set of latent
-constructs.
+constructs. For more details see: https://link.springer.com/article/10.3758/s13428-017-0875-9.
 
 
 Installation Guidelines
