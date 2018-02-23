@@ -95,8 +95,8 @@ def terms_from_liwc(input_path):
                 for dim in dims:
                     out_dic[codes[dim]].extend(words)
 
-    print "Number of dimensions registered: {0}".format(len(out_dic.keys()))
-    print "Number of words registered: {0}".format(sum([len(i) for i in out_dic.values()]))
+    print("Number of dimensions registered: {0}".format(len(out_dic.keys())))
+    print("Number of words registered: {0}".format(sum([len(i) for i in out_dic.values()])))
     return (out_dic)
 
 

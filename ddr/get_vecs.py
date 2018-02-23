@@ -95,90 +95,64 @@ def doc_vecs_from_csv(input_path, output_path, model, num_features, model_word_s
         docs = csv.reader(docs_file, delimiter=delimiter, quotechar=quotechar)
 
         if header is True:
-
             header = docs.next()
-            print header
+            print(header)
 
             if id_col is not False:
-
                 try:
                     id_col = header.index(id_col)
-
                 except ValueError:
-
                     try:
                         id_col = int(id_col)
-
                     except ValueError:
-
-                        print "ValueError: Column '{0}' not found, please make sure that the name or index was correctly listed".format(
-                            id_col)
+                        print("ValueError: Column '{0}' not found, please make sure that the name or index was correctly listed".format(id_col))
 
             try:
-                print text_col
+                print(text_col)
                 text_col = header.index(text_col)
-
             except ValueError:
-
                 try:
                     text_col = int(text_col)
-
                 except ValueError:
-
-                    print "ValueError: Column '{0}' not found, please make sure that the name or index was correctly listed".format(
-                        text_col)
+                    print("ValueError: Column '{0}' not found, please make sure that the name or index was correctly listed".format(text_col))
 
         if header is False:
-
             if id_col is not False:
-
                 try:
-
                     id_col = int(id_col)
-
                 except ValueError:
-
-                    print "ValueError: Column '{0}' not found, please make sure that the index was correctly listed".format(
-                        id_col)
+                    print("ValueError: Column '{0}' not found, please make sure that the index was correctly listed".format(id_col))
 
             try:
                 text_col = int(text_col)
-
             except ValueError:
-
-                print "ValueError: Column '{0}' not found, please make sure that the index was correctly listed".format(
-                    text_col)
-
+                print("ValueError: Column '{0}' not found, please make sure that the index was correctly listed".format(text_col))
 
         fieldnames = ['ID'] + [unicode(fnum) for fnum in range(1, num_features + 1)]
         writer = csv.writer(out_file, delimiter=delimiter, quotechar=quotechar)
         writer.writerow(fieldnames)
 
         n_lines = float(file_len(input_path))
-        print n_lines
+        print(n_lines)
         n_na = 0
 
-        print 'Generating aggregate distributed representations of', n_lines, 'texts.'
+        print('Generating aggregate distributed representations of', n_lines, 'texts.')
         update_progress(0 / (n_lines - 1))
 
         prog_counter = 0
         counter = 0
 
         if id_col is False:
-
             cur_id = 0
 
             for row in docs:
-
                 try:
                     cur_id += 1
                     prog_counter += 1
                     counter += 1
 
-
                     doc = row[text_col].split()
                     cur_agg_vec = make_agg_vec(words=doc, model=model, num_features=num_features, model_word_set=model_word_set, filter_out=[])
-
                     writer.writerow([cur_id] + list(cur_agg_vec))
 
                     if prog_counter >= 0.05 * n_lines:
@@ -186,34 +160,24 @@ def doc_vecs_from_csv(input_path, output_path, model, num_features, model_word_s
                         update_progress(counter / (n_lines - 1))
 
                 except IndexError:
-
                     n_na += 1
                     pass
 
-
         elif id_col is not False:
-
             for row in docs:
+                prog_counter += 1
+                counter += 1
+                
+                doc = row[text_col].split()
+                cur_agg_vec = make_agg_vec(words=doc, model=model, num_features=num_features, model_word_set=model_word_set, filter_out = [])
 
-                #try:
+                writer.writerow([row[id_col]] + list(cur_agg_vec))
 
-                    prog_counter += 1
-                    counter += 1
+                if prog_counter >= 0.05 * n_lines:
+                    prog_counter = 0
+                    update_progress(counter / (n_lines - 1))
 
-                    doc = row[text_col].split()
-                    cur_agg_vec = make_agg_vec(words=doc, model=model, num_features=num_features, model_word_set=model_word_set, filter_out = [])
-
-                    writer.writerow([row[id_col]] + list(cur_agg_vec))
-
-                    if prog_counter >= 0.05 * n_lines:
-                        prog_counter = 0
-                        update_progress(counter / (n_lines - 1))
-
-                # except IndexError:
-                #     n_na += 1
-                #     pass
-
-            print "\nFinished calculating aggregate document representations", "\nNumber NA:", n_na
+            print("\nFinished calculating aggregate document representations", "\nNumber NA:", n_na)
 
 
 
@@ -245,7 +209,7 @@ def doc_vecs_from_txt(input_path, output_path, num_features, model, model_word_s
 
                 n_lines = float(file_len(input_path))
 
-                print 'Generating aggregate distributed representations of', n_lines, 'texts.'
+                print('Generating aggregate distributed representations of', n_lines, 'texts.')
                 update_progress(0 / (n_lines - 1))
 
                 prog_counter = 0
@@ -273,7 +237,7 @@ def doc_vecs_from_txt(input_path, output_path, num_features, model, model_word_s
 
                         n_na += 1
                         pass
-                print "\nFinished calculating aggregate document representations", "\nNumber of NA:", na_na
+                print("\nFinished calculating aggregate document representations", "\nNumber of NA:", n_na)
 
 
 

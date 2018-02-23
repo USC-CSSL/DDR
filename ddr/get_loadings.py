@@ -8,8 +8,8 @@ import file_length
 import pandas as pd
 from simple_progress_bar import update_progress
 
-
 from cosine_similarity import cos_similarity
+
 
 datetime = tm.localtime()
 date = '{0:}-{1:}-{2:}'.format(datetime.tm_mon, datetime.tm_mday, datetime.tm_year)
@@ -72,5 +72,5 @@ def get_loadings(agg_doc_vecs_path, agg_dic_vecs_path, out_path, num_features, d
                     prog_counter = 0
                     update_progress(counter / (n_docs - 1))
 
-        print 'Failed to calculate {0} loadings due to missing values.'.format(nan_counter['count'])
-        print 'IDs for documents with missing values:\n\n', nan_counter['ID']
+        print('Failed to calculate {0} loadings due to missing values.'.format(nan_counter['count']))
+        print('IDs for documents with missing values:\n\n', nan_counter['ID'])

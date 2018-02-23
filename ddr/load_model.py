@@ -23,5 +23,5 @@ def load_model(model_path, verbose = True):
     model = kv.load_word2vec_format(model_path, binary=True)
     num_features = model.vector_size
     model_word_set = set(model.index2word)
-    print 'Finished loading model'
+    print('Finished loading model')
     return model, num_features, model_word_set
