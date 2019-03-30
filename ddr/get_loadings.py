@@ -4,7 +4,7 @@ import numpy as np
 import logging
 import csv
 import time as tm
-import file_length
+from ddr.file_length import file_length
 import pandas as pd
 from simple_progress_bar import update_progress
 
