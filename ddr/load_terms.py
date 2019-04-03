@@ -27,7 +27,7 @@ def get_files(input_path):
 
             elif os.path.isdir(os.path.join(input_path, f)):
                 sub_path = os.path.join(input_path, f)
-                get_files(path=sub_path)
+                get_files(input_path=sub_path)
 
     return path_info
 
