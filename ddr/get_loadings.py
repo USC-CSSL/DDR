@@ -4,11 +4,12 @@ import numpy as np
 import logging
 import csv
 import time as tm
-import file_length
 import pandas as pd
-from simple_progress_bar import update_progress
+from ddr.simple_progress_bar import update_progress
+from ddr.file_length import *
 
-from cosine_similarity import cos_similarity
+
+from ddr.cosine_similarity import cos_similarity
 
 
 datetime = tm.localtime()
@@ -19,7 +20,6 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=lo
 
 def get_loadings(agg_doc_vecs_path, agg_dic_vecs_path, out_path, num_features, delimiter='\t'):
     '''
-
     :param agg_doc_vecs_path: Path to distributed representations of documents
     :param agg_dic_vecs_path: Path to distributed representations of dictionaries
     :param out_path: Path to write to
@@ -29,17 +29,17 @@ def get_loadings(agg_doc_vecs_path, agg_dic_vecs_path, out_path, num_features, d
     '''
     """Get loadings between each document vector in agg-doc_vecs_path and each dictionary dimension in
     agg_dic_vecs_path"""
-    n_docs = float(file_length.file_len(agg_doc_vecs_path))
+    n_docs = float(file_len(agg_doc_vecs_path))
     prog_counter = 0
     counter = 0
     dic_vecs = pd.read_csv(agg_dic_vecs_path, sep=delimiter)
     dic_vecs = dic_vecs.to_dict(orient='list')
     nan_counter = {'ID': [], 'count': 0}
-
-    with open(agg_doc_vecs_path, 'rb') as doc_vecs, open(out_path, 'wb') as out_file:
+    print('reached here')
+    with open(agg_doc_vecs_path, 'r') as doc_vecs, open(out_path, 'w') as out_file:
 
         doc_vecs_reader = csv.reader(doc_vecs, delimiter='\t')
-        doc_vecs_reader.next()
+        next(doc_vecs_reader)
 
         writer = csv.writer(out_file, delimiter='\t')
         fieldnames_out = ['ID'] + list(dic_vecs.keys())
@@ -53,13 +53,18 @@ def get_loadings(agg_doc_vecs_path, agg_dic_vecs_path, out_path, num_features, d
                 nan_counter['ID'].append(doc_vec[0])
                 pass
 
+            elif not doc_vec:
+                continue
+
             else:
                 prog_counter += 1
                 counter += 1
+                # print(doc_vec)
+                # break
                 doc_id = doc_vec[0]
                 out_row = [doc_id]
 
-                for k in dic_vecs.iterkeys():
+                for k in dic_vecs.keys():
 
 
                     doc_vec = [np.float64(x) for x in doc_vec[-num_features:]]

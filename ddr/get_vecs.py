@@ -4,13 +4,13 @@ __author__ = 'Joe Hoover'
 
 import sys
 import numpy as np
-from load_terms import get_files
+from .load_terms import get_files
 import os
 import collections
 import csv
-from file_length import file_len
+from .file_length import file_len
 import pandas as pd
-from simple_progress_bar import update_progress
+from .simple_progress_bar import update_progress
 
 
 def make_agg_vec(words, model, num_features, model_word_set, filter_out=[]):
@@ -43,7 +43,7 @@ def dic_vecs(dic_terms, model, num_features, model_word_set, filter_out=[]):
      representing that dimension. len(values) will equal num_features.
     '''
     agg_dic_vecs = collections.OrderedDict()
-    for k in dic_terms.iterkeys():
+    for k in dic_terms.keys():
         agg_dic_vecs[k] = make_agg_vec(dic_terms[k], model = model, num_features = num_features,
                                          model_word_set = model_word_set, filter_out = filter_out)
 
@@ -90,12 +90,12 @@ def doc_vecs_from_csv(input_path, output_path, model, num_features, model_word_s
     object is returned.
     """
 
-    with open(input_path, 'rb') as docs_file, open(output_path, 'wb') as out_file:
+    with open(input_path, 'r') as docs_file, open(output_path, 'w') as out_file:
 
         docs = csv.reader(docs_file, delimiter=delimiter, quotechar=quotechar)
 
         if header is True:
-            header = docs.next()
+            header = next(docs)[0].split(',')
             print(header)
 
             if id_col is not False:
@@ -128,7 +128,7 @@ def doc_vecs_from_csv(input_path, output_path, model, num_features, model_word_s
             except ValueError:
                 print("ValueError: Column '{0}' not found, please make sure that the index was correctly listed".format(text_col))
 
-        fieldnames = ['ID'] + [unicode(fnum) for fnum in range(1, num_features + 1)]
+        fieldnames = ['ID'] + [str(fnum) for fnum in range(1, num_features + 1)]
         writer = csv.writer(out_file, delimiter=delimiter, quotechar=quotechar)
         writer.writerow(fieldnames)
 
@@ -197,15 +197,15 @@ def doc_vecs_from_txt(input_path, output_path, num_features, model, model_word_s
 
     path_info = get_files(input_path=input_path)
 
-    with open(output_path, 'wb') as out_file:
+    with open(output_path, 'w') as out_file:
 
-        fieldnames = ['ID'] + [unicode(fnum) for fnum in range(1, num_features + 1)]
+        fieldnames = ['ID'] + [str(fnum) for fnum in range(1, num_features + 1)]
         writer = csv.writer(out_file, delimiter=delimiter)
         writer.writerow(fieldnames)
 
-        for input_path in path_info.itervalues():
+        for input_path in path_info.values():
 
-            with open(input_path, 'rb') as docs:
+            with open(input_path, 'r') as docs:
 
                 n_lines = float(file_len(input_path))
 

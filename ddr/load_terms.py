@@ -41,7 +41,7 @@ def terms_from_txt(input_path):
     dic_terms_out = collections.OrderedDict()
     path_info = get_files(input_path=input_path)
 
-    for k in path_info.iterkeys():
+    for k in path_info.keys():
         current_file = path_info[k]
 
         with open(current_file, 'rb') as dict_file:
