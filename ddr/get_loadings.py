@@ -38,10 +38,10 @@ def get_loadings(agg_doc_vecs_path, agg_dic_vecs_path, out_path, num_features, d
 
     with open(agg_doc_vecs_path, 'rb') as doc_vecs, open(out_path, 'wb') as out_file:
 
-        doc_vecs_reader = csv.reader(doc_vecs, delimiter='\t')
+        doc_vecs_reader = csv.reader(doc_vecs, delimiter=delimiter)
         doc_vecs_reader.next()
 
-        writer = csv.writer(out_file, delimiter='\t')
+        writer = csv.writer(out_file, delimiter=delimiter)
         fieldnames_out = ['ID'] + list(dic_vecs.keys())
 
         writer.writerow(fieldnames_out)
